@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root {
+    --white: #fff;
+    --grey: #e5eff5;
+    --grey-blue: #98a6bd;
+    --cyan: #2ab2af;
+    --lightcyan: #0fccc9;
+    --yellowgreen: #c0df34;
+    --grayishblue: #98a6bd;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--grey);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    width: 60%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: 'Karla', sans-serif;
+}
+
+.top {
+    grid-column: 1/ span 2;
+    grid-row: 1;
+    background-color: var(--white);
+    padding: 35px;
+}
+
+.middle {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: var(--cyan);
+    padding: 35px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.bottom {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: var(--lightcyan);
+    padding: 35px;
+}
+
+.cyan {
+    color: var(--cyan);
+    font-size: 1.4rem;
+}
+
+.green {
+    color: var(--yellowgreen);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 20px auto;
+}
+
+.grey {
+    color: var(--grey-blue);
+}
+
+.heading {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.price h1 {
+    color: var(--white);
+    padding-right: 10px;
+}
+
+.lgrey {
+    color: var(--grey);
+    font-size: 0.96rem;
+}
+
+button {
+    width: 100%;
+    background-color: var(--yellowgreen);
+    border: none;
+    padding: 15px 10px;
+    margin: 20px 0 10px;
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+}
+
+.padding {
+    padding-top: 15px;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 780px) {
+    main {
+        padding: 50px 0;
+    }
+    .grid {
+        display: block;
+        width: 90%;
+    }
+}
