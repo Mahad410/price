@@ -27,7 +27,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    width: 60%;
+    width: 45%;
     box-sizing: border-box;
     border-radius: 8px;
     overflow: hidden;
